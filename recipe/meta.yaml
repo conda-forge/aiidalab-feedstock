@@ -1,5 +1,5 @@
 {% set name = "aiidalab" %}
-{% set version = "22.7.1" %}
+{% set version = "22.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiidalab-{{ version }}.tar.gz
-  sha256: 4d6dbc0079bc1d873df36462e19b232e1f1d01b5f54be2ae5ffd30ab0862a659
+  sha256: b4a7b2241721450aa74295dbb8af8d2ea5ed8f709cacbfcca7623542ced470ff
 
 build:
   entry_points:
