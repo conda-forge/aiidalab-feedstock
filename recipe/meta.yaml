@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiidalab-{{ version }}.tar.gz
-  sha256: 2fa145dd824e5a5817952dd6dec09d1965c40406a42417becefa7a757a7db8b2
+  sha256: 4f4dd5f5635477ccc4a23c08a7ff03e3fbf206c3dc07f19338c5bedd94cda54a
 
 build:
   entry_points:
