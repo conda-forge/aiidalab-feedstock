@@ -1,11 +1,11 @@
-About aiidalab
-==============
+About aiidalab-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiidalab-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/aiidalab/aiidalab
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aiidalab-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implements core functions of AiiDAlab.
 
@@ -144,5 +144,7 @@ Feedstock Maintainers
 =====================
 
 * [@csadorf](https://github.com/csadorf/)
+* [@danielhollas](https://github.com/danielhollas/)
+* [@unkcpz](https://github.com/unkcpz/)
 * [@yakutovicha](https://github.com/yakutovicha/)
 

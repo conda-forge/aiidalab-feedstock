@@ -1,5 +1,6 @@
 {% set name = "aiidalab" %}
-{% set version = "22.11.0" %}
+{% set version = "23.3.0" %}
+{% set sha256 = "4f4dd5f5635477ccc4a23c08a7ff03e3fbf206c3dc07f19338c5bedd94cda54a" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiidalab-{{ version }}.tar.gz
-  sha256: 2fa145dd824e5a5817952dd6dec09d1965c40406a42417becefa7a757a7db8b2
+  sha256: {{ sha256 }}
 
 build:
   entry_points:
@@ -21,7 +22,6 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - aiida-core >=2.0.0,<3
     - cachecontrol >=0.12,=0
     - cachetools >=4.1,=4
     - click >=7.0,<9
@@ -33,7 +33,7 @@ requirements:
     - jsonref >=0.2,=0
     - jsonschema >=3.2,=3
     - markupsafe ==2.0.1
-    - packaging >=20.1
+    - packaging >=20.1,<22
     - python >=3.7
     - requests >=2.27,=2
     - requests-cache >=0.5,=0
@@ -43,7 +43,7 @@ requirements:
     - toml >=0.10,=0
     - traitlets >=5.0,=5
     - urllib3 >=1.24,=1
-    - watchdog >=0.10,=0
+    - watchdog >=2.3,=2
 
 test:
   imports:
