@@ -1,5 +1,5 @@
 {% set name = "aiidalab" %}
-{% set version = "22.11.0" %}
+{% set version = "23.04.0" %}
 
 package:
   name: {{ name|lower }}
@@ -21,7 +21,6 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - aiida-core >=2.0.0,<3
     - cachecontrol >=0.12,=0
     - cachetools >=4.1,=4
     - click >=7.0,<9
@@ -33,7 +32,7 @@ requirements:
     - jsonref >=0.2,=0
     - jsonschema >=3.2,=3
     - markupsafe ==2.0.1
-    - packaging >=20.1
+    - packaging >=20.1,<22
     - python >=3.7
     - requests >=2.27,=2
     - requests-cache >=0.5,=0
@@ -43,7 +42,7 @@ requirements:
     - toml >=0.10,=0
     - traitlets >=5.0,=5
     - urllib3 >=1.24,=1
-    - watchdog >=0.10,=0
+    - watchdog >=2.3,=2
 
 test:
   imports:
