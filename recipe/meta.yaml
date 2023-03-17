@@ -1,5 +1,5 @@
 {% set name = "aiidalab" %}
-{% set version = "23.03.0" %}
+{% set version = "23.3.0" %}
 
 package:
   name: {{ name|lower }}
