@@ -1,6 +1,6 @@
 {% set name = "aiidalab" %}
-{% set version = "23.3.1" %}
-{% set sha256 = "20151913712922209df7ec444b027b077dadce8455785a311c51900bb4bec6da" %}
+{% set version = "23.3.2" %}
+{% set sha256 = "eb06ed334eeb680dd12707b93f3135153e54c020c07d857cf37d6e8b8e51f43f" %}
 
 package:
   name: {{ name|lower }}
@@ -29,10 +29,9 @@ requirements:
     - dacite >=1.6,=1
     - dulwich >=0.20,=0
     - ipython >=7.0,=7
-    - jinja2 >=2.11.3,<4
+    - jinja2 >=3.0,<4
     - jsonref >=0.2,=0
     - jsonschema >=3.2,=3
-    - markupsafe ==2.0.1
     - packaging >=20.1,<22
     - python >=3.7
     - requests >=2.27,=2
