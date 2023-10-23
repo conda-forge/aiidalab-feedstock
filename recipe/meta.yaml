@@ -1,6 +1,6 @@
 {% set name = "aiidalab" %}
-{% set version = "23.3.1" %}
-{% set sha256 = "20151913712922209df7ec444b027b077dadce8455785a311c51900bb4bec6da" %}
+{% set version = "23.3.2" %}
+{% set sha256 = "eb06ed334eeb680dd12707b93f3135153e54c020c07d857cf37d6e8b8e51f43f" %}
 
 package:
   name: {{ name|lower }}
