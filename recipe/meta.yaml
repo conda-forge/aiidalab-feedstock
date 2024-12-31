@@ -1,5 +1,6 @@
 {% set name = "aiidalab" %}
 {% set version = "24.9.0" %}
+{% set python_min = "3.9" %}
 {% set sha256 = "06611f59b06716e598216b14a325542b2e6471230c520e2e512f0e1541e451d8" %}
 
 package:
@@ -7,7 +8,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiidalab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aiidalab-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -15,12 +16,12 @@ build:
     - aiidalab = aiidalab.__main__:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
     - cachetools >=4.1,=4
@@ -29,7 +30,7 @@ requirements:
     - dulwich >=0.20,=0
     - packaging >=20.1
     - pip
-    - python >=3.9
+    - python >={{ python_min }}
     - requests >=2.27,=2
     - requests-cache >=1.0,=1
     - setuptools
@@ -46,6 +47,7 @@ test:
     - aiidalab --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/aiidalab/aiidalab
