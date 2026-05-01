@@ -1,7 +1,7 @@
 {% set name = "aiidalab" %}
-{% set version = "26.2.0" %}
+{% set version = "26.5.0" %}
 {% set python_min = "3.9" %}
-{% set sha256 = "146b2c5b779bf52bced1f9c952e70d35871b91176ee2ec59220d6db7a6a503ef" %}
+{% set sha256 = "2685ef2845107107f310779953f11a72668bf717cc27c8b0d613d868c4c1d31e" %}
 
 package:
   name: {{ name|lower }}
@@ -24,6 +24,7 @@ requirements:
     - python {{ python_min }}
     - flit-core >=3.4,=3
   run:
+    # NOTE: These do not include the optional dependencies from "registry" extras
     - cachetools >=4.1,=4
     - click >=7.0,<9
     - click-spinner >=0.1,=0
@@ -37,7 +38,7 @@ requirements:
     - tabulate >=0.8,=0
     - toml >=0.10,=0
     - traitlets >=5.0,=5
-    - watchdog >=4.0,=4
+    - watchdog >=6.0,=6
 
 test:
   imports:
